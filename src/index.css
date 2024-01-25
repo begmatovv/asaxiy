@@ -1,0 +1,104 @@
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+nav {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.katalog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  gap: 8px;
+  padding: 15px 27px 15px 28px;
+  border: transparent;
+  border-radius: 12px;
+  transition: 0.5s ease;
+  color: white;
+  background-color: #008dff;
+  cursor: pointer;
+}
+.katalog:hover {
+}
+.katalog-parda {
+  position: absolute;
+  opacity: 0;
+  width: 1260px;
+  min-height: 800px;
+  background-color: lightblue;
+}
+.parda-open {
+  animation-name: parda;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes parda {
+  from {
+    min-height: 0;
+    opacity: 0;
+  }
+  to {
+    min-height: 800px;
+    opacity: 1;
+  }
+}
+.search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 380px;
+  border: 2px solid #008dff;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.search {
+  width: 180px;
+  background-color: transparent;
+  text-align: start;
+  border: transparent;
+  padding: 5px 10px;
+  font-size: 20px;
+  text-align: left;
+}
+button {
+  background-color: #008dff;
+  color: aliceblue;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 5px;
+  font-size: 20px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+.nav-right-list {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .5s ease;
+}
+.nav-right-list:hover {
+  color: #008dff;
+}
